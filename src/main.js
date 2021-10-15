@@ -7,10 +7,11 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-import * as THREE from 'three';
-// import { OrbitControls } from 'three';
-// import { FlakesTexture } from 'three';
-// import { RGBELoader } from 'three';
+/*
+import * as THREE from '/node_modules/three/src/Three.js';
+    import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
+    import { FlakesTexture } from 'https://threejs.org/examples/jsm/textures/FlakesTexture.js';
+    import { RGBELoader } from 'https://threejs.org/examples/jsm/loaders/RGBELoader.js';
 
     // const scene = new THREE.Scene();
 
@@ -48,4 +49,4 @@ import * as THREE from 'three';
     }
 
     //To start Scene
-    init();
+    init();*/
