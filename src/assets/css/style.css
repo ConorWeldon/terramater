@@ -1,0 +1,189 @@
+@import url('http://fonts.cdnfonts.com/css/azedo');
+@import url(//db.onlinewebfonts.com/c/0980a3282d814d6401d07131fcf53789?family=Azedo);
+@import url('http://fonts.cdnfonts.com/css/audi-type-2');
+
+* {
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    /* background: radial-gradient(#292929, #000000); */
+    /* overflow: hidden; */
+    color: #ffffff;
+}
+
+.background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -3;
+}
+
+.earth {
+    position: absolute;
+    left: 30.295%;    /* 576.5px Even each side */
+    top: 13.875%;       /* 130px */
+    z-index: -1;
+    max-width: 100%;
+    width: 39.412%;     /* 750px */
+    height: auto;
+}
+
+.moon {
+    position: absolute;
+    left: 80.4%;    /* 1530px */
+    top: 20.278%;       /* 190px */
+    z-index: -1;
+}
+
+.mars {
+    position: absolute;
+    left: 8.1452%;      /* 155px */
+    top: 35.22%;        /* 330px */
+    z-index: -1;
+}
+
+.lines {
+    position: absolute;
+    left: 0px;    /* 576.5px Even each side */
+    top: 0px;       /* 130px */
+    z-index: -2;
+}
+
+.title-img {
+    margin: 25.521% 0px 0px 0px;        /* 490px top */
+    max-width: 100%;
+    width: 34.532%;     /* 663px */
+    height: auto;
+}
+
+.subTitle {
+    font-family: 'Azedo', sans-serif;
+    font-weight: 700;
+    font-size:  2.1875vw;        /* 42px */
+    color: #ffffff;
+    max-width: 100%;
+    height: auto;
+}
+
+.explore-box {
+    width: 400px;
+    height: 75px;
+    background-color: #ffffff;
+    margin: 50px 0px 15px 0px;
+}
+
+.explore-text {
+    font-family: 'Azedo', sans-serif;
+    font-weight: 700;
+    font-size:  1.875vw;        /* 36px */
+    color: #000000;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.explore-subText {
+    font-family: 'Azedo', sans-serif;
+    font-weight: 300;
+    font-size:   0.9375vw;        /* 18px */
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+/* Country Page */
+.country-background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -3;
+    width: 100%;
+    height: auto;
+}
+
+.country-img {
+    position: absolute;
+    left: 0px;
+    top: 1070px;
+    z-index: -2;
+    width: 100%;
+    height: 105%;
+}
+
+.country-title {
+    font-family: 'Audi Type', sans-serif;
+    font-weight: 700;
+    font-size:   6.25vw;        /* 120px */
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.country-subTitle {
+    font-family: 'Audi Type', sans-serif;
+    font-weight: 500;
+    font-size:   2.5vw;        /* 48px */
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.country-bio {
+    font-family: 'Audi Type', sans-serif;
+    font-weight: 300;
+    font-size:   1.5625vw;        /* 30px */
+    color: #ffffff;
+    width: 31.25vw;
+}
+
+.margin-country {
+    margin: 20.3125vw 0px 0px 7.8125vw;        /* 390px top 150px left */
+}
+
+.margin-capital {
+    margin: 15.625vw 0px 0px 0px;        /* 300px top */
+}
+
+
+.country-capital {
+    font-family: 'Audi Type', sans-serif;
+    font-weight: 700;
+    font-size:   2.5vw;        /* 48px */
+    color: #000000;
+    margin: 4.6875vw 0px 0px 3.90625vw;         /* 90px top 75px left */
+}
+
+.black-box {
+    background-color: #000000;
+    width: 23.4375vw;       /* 450px */
+    height: 3.90625vw;       /* 75px */
+    margin: 32.8125vw 0px 0px 2.96875vw;      /* 525px top 57px left */
+}
+
+.country-explore {
+    font-family: 'Audi Type', sans-serif;
+    font-weight: 400;
+    font-size:   1.875vw;        /* 36px */
+    color: #ffffff;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.cd{
+    height: 100%;
+    background-color: red;
+}
+
+.dc{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border: 3px #000000;
+}
+
+.row-no-gutters {
+    padding: 0px;
+    margin: 0px;
+}
