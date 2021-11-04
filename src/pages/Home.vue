@@ -42,31 +42,4 @@ export default {
 
 <style scoped>
 
-.hero {
-  text-align: center;
-  color: #74c69d;
-  font-weight: lighter;
-  letter-spacing: 1px;
-}
-.searchtext{
-    color: #74c69d;
-  font-size: 18px;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #000000;
-}
-
-a:active {
-  text-decoration: underline;
-}
 </style>

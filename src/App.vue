@@ -1,10 +1,10 @@
 <template>
   <div>
-    <b-container-fluid>
+    <div>
           <!-- <NavBar /> -->
               <router-view />
           <!-- <Footer/> -->
-    </b-container-fluid>
+    </div>
   </div>
 </template>
 
@@ -33,7 +33,7 @@ export default {
 
 </style>
 
-
+<script>
 // import * as THREE from 'three';
 //     // import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
 //     // import { FlakesTexture } from 'https://threejs.org/examples/jsm/textures/FlakesTexture.js';

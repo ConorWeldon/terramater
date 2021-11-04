@@ -72,14 +72,7 @@ export default {
 </script>
 
 <style>
-.title {
-  text-align: center;
-  color: #74c69d;
-}
-.header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
 *{ 
   overflow: visible;
 }

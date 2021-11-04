@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="background-c">
     <div class="">
       <div class="search-box center">
         <input type="text" v-model="term" v-on:keyup.enter="searchCountries()" />
@@ -13,7 +13,7 @@
     </div>
 
 <div class="">
-    <b-card-group deck>
+    <b-card-group class="d-flex justify-content-center">
       <!-- <div>
         <h1 class="title">All Countries</h1>
             <CountryViewer
@@ -23,23 +23,26 @@
             />
       </div> -->
 
-      <b-card>
+      <div class="boxes">
+        <h1 class="title">Europe</h1>
             <CountryViewer
               v-for="country in europes"
               :key="country.ccn3"
               :country="country"
             />
-      </b-card>
+      </div>
 
-      <b-card>
+      <div class="boxes">
+        <h1 class="title">Asia</h1>
             <CountryViewer
               v-for="country in asia"
               :key="country.ccn3"
               :country="country"
             />
-      </b-card>
+      </div>
 
-      <div>
+      <div class="boxes">
+        <h1 class="title">Africa</h1>
             <CountryViewer
               v-for="country in africa"
               :key="country.ccn3"
@@ -47,7 +50,8 @@
             />
       </div>
 
-      <div>
+      <div class="boxes">
+        <h1 class="title">America</h1>
             <CountryViewer
               v-for="country in america"
               :key="country.ccn3"
@@ -73,6 +77,9 @@ export default {
     return {
       countries: [],
       europes: [],
+      africa: [],
+      asia: [],
+      america: [],
     };
   },
   mounted() {
@@ -147,13 +154,19 @@ export default {
 </script>
 
 <style>
-.title {
+.boxes {
   text-align: center;
-  color: #74c69d;
+  color: #000000;
+  width: 22rem;
+  margin: 50px 30px 0px 30px;
 }
 
 *{
   overflow: visible !important;
+}
+
+.background-c {
+  background-color: black;
 }
 </style>
 

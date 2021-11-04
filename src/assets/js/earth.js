@@ -1,4 +1,4 @@
-import * as THREE from '/node_modules/three/src/Three.js';
+import * as THREE from 'three';
     import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
     import { FlakesTexture } from 'https://threejs.org/examples/jsm/textures/FlakesTexture.js';
     import { RGBELoader } from 'https://threejs.org/examples/jsm/loaders/RGBELoader.js';

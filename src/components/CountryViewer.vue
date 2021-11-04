@@ -1,8 +1,8 @@
 <template>
   
       
-        <b-card>
-            <div class="card-header">Header</div>
+        <div class="padding rounded">
+            <div class="card-header head-color">{{ country.region }}</div>
             <div class="card-body">
               <div class="center">
                 <img :src="country.flags.png" width="100%">
@@ -10,7 +10,7 @@
               <h5 class="card-title"><router-link :to="{name: 'singlecountries',params: { country: country.name.official },}">{{ country.name.common }}</router-link></h5>
               <p class="card-text"><b>Capital: </b>{{ country.capital[0] }}<b>Population: </b>{{ country.population }}</p>
             </div>
-        </b-card>
+        </div>
       <!-- <b-row>
         <b-col class="">
           <b-card-group>
@@ -48,5 +48,16 @@ export default {
 <style>
 .center{
   text-align: center;
+}
+
+.padding {
+  margin-top: 50px;
+  background-color: #ffffff;
+}
+
+.head-color {
+  background-color: #393E46 !important;
+  color: white;
+  font-size: 1.5rem;
 }
 </style>
