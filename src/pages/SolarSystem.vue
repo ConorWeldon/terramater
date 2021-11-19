@@ -15,15 +15,19 @@
 
 
 <script>
-import Three from 'three'
+// import Three from 'three'
 
 export default {
   name: "three",
   mounted() {
-    Three
+    // THREE,
+    // OrbitControls,
+    // FlakesTexture,
+    // RGBELoader
     }
 };
 
+// import * as THREE from './js/three.module.js';
 // import * as THREE from '/node_modules/three/src/Three.js';
 //     import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
 //     import { FlakesTexture } from 'https://threejs.org/examples/jsm/textures/FlakesTexture.js';

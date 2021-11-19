@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="over">
         <div class="d-flex justify-content-center">
             <img class="title-img" src="../assets/images/TerraMater.png" alt="">
         </div>
@@ -41,5 +41,7 @@ export default {
 </script>
 
 <style scoped>
-
+* {
+    overflow: hidden !important;
+}
 </style>

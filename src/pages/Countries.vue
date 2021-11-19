@@ -1,70 +1,27 @@
 <template>
-  <div class="background-c">
-    <div class="">
+  <div class="background-c" style="padding-bottom: 100px">
+    <div class="" style="padding-top: 125px; padding-bottom: 30px">
       <div class="search-box center">
         <input type="text" v-model="term" v-on:keyup.enter="searchCountries()" />
-        <b-button
-          class="float-end"
-          variant="outline-success"
-          @click="searchCountries()"
-          >Search</b-button
-        >
+        <b-button style="margin-left: 10px;" variant="outline-success" @click="searchCountries()">Search</b-button>
       </div>
     </div>
 
-<div class="">
-    <b-card-group class="d-flex justify-content-center">
-      <!-- <div>
-        <h1 class="title">All Countries</h1>
-            <CountryViewer
-              v-for="country in countries"
-              :key="country.ccn3"
-              :country="country"
-            />
-      </div> -->
+    <div class="container-con">
+      <h1 class="title text-center">All Countries</h1>
+      <b-card-group>
+        <b-row cols-sm="4" style="min-width: 120rem !important;" class="d-flex justify-content-center">
 
-      <div class="boxes">
-        <h1 class="title">Europe</h1>
-            <CountryViewer
-              v-for="country in europes"
-              :key="country.ccn3"
-              :country="country"
-            />
-      </div>
-
-      <div class="boxes">
-        <h1 class="title">Asia</h1>
-            <CountryViewer
-              v-for="country in asia"
-              :key="country.ccn3"
-              :country="country"
-            />
-      </div>
-
-      <div class="boxes">
-        <h1 class="title">Africa</h1>
-            <CountryViewer
-              v-for="country in africa"
-              :key="country.ccn3"
-              :country="country"
-            />
-      </div>
-
-      <div class="boxes">
-        <h1 class="title">America</h1>
-            <CountryViewer
-              v-for="country in america"
-              :key="country.ccn3"
-              :country="country"
-            />
-      </div>
-    </b-card-group>
+          <CountryViewer v-for="country in countries" :key="country.ccn3" :country="country" />
+        </b-row>
+      </b-card-group>
     </div>
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import NavBar from "../components/NavBar.vue";
 import CountryViewer from "@/components/CountryViewer";
 const REST_URL = "https://restcountries.com/v3.1/";
 
@@ -76,10 +33,7 @@ export default {
   data() {
     return {
       countries: [],
-      europes: [],
-      africa: [],
-      asia: [],
-      america: [],
+      NavBar,
     };
   },
   mounted() {
@@ -88,38 +42,6 @@ export default {
       .then((response) => {
         console.log(response.data);
         this.countries = response.data;
-      })
-      .catch((error) => console.log(error));
-  
-  axios
-      .get("https://restcountries.com/v3.1/region/europe")
-      .then((response) => {
-        console.log(response.data);
-        this.europes = response.data;
-      })
-      .catch((error) => console.log(error));
-
-  axios
-      .get("https://restcountries.com/v3.1/region/asia")
-      .then((response) => {
-        console.log(response.data);
-        this.asia = response.data;
-      })
-      .catch((error) => console.log(error));
-
-  axios
-      .get("https://restcountries.com/v3.1/region/africa")
-      .then((response) => {
-        console.log(response.data);
-        this.africa = response.data;
-      })
-      .catch((error) => console.log(error));
-
-  axios
-      .get("https://restcountries.com/v3.1/region/america")
-      .then((response) => {
-        console.log(response.data);
-        this.america = response.data;
       })
       .catch((error) => console.log(error));
   },
@@ -161,12 +83,22 @@ export default {
   margin: 50px 30px 0px 30px;
 }
 
-*{
-  overflow: visible !important;
-}
-
 .background-c {
   background-color: black;
+  height: 100%;
+}
+
+.container {
+  background-color: #343a40 !important;
+}
+
+* {
+    overflow-y:initial !important;
+}
+
+body {
+  background-color: #000000 !important;
+  overflow: visible !important;
 }
 </style>
 

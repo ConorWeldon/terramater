@@ -1,58 +1,70 @@
 <template>
-  <div>
-    <b-nav class="navbar">
-      <b-nav-item class="h1" active>
-        <router-link :to="{ name: 'home' }">Hellow World</router-link></b-nav-item>
-      <div class="d-flex justify-content-end">
-        <b-nav-item>
-          <router-link :to="{ name: 'countries' }">Countries</router-link>
-          </b-nav-item>
-        <b-nav-item>
-          <router-link :to="{ name: 'about' }">About</router-link></b-nav-item>
-        <b-nav-item>
-          <router-link :to="{ name: 'contact' }">Contact</router-link></b-nav-item>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+    <h1 class="navbar-brand" style="padding-left: 45px; font-size: 25px">TERRA MATTER</h1>
+
+    <div class=" space collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <router-link :to="{ name: 'home' }">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        </router-link>
+
+        <router-link :to="{ name: 'countries' }">
+          <a class="nav-item nav-link" href="#">countries</a>
+        </router-link>
+
+        <router-link :to="{ name: 'about' }">
+          <a class="nav-item nav-link" href="#">about</a>
+        </router-link>
+
+        <router-link :to="{ name: 'contact' }">
+          <a class="nav-item nav-link" href="#">contact</a>
+        </router-link>
       </div>
-    </b-nav>
-  </div>
+    </div>
+  </nav>
 </template>
 
 <script>
 export default {
   name: "NavBar",
 };
+
 </script>
 
 <style scoped>
+/* The navigation bar */
 .navbar {
-  padding: 10px;
-  background: #d8f3dc;
-  text-decoration-line: none;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 10; /* This makes it so its always above the others */
 }
 
-.h1 {
-  font-size: 36px;
-}
-.links {
-  align-content: flex-end;
-}
-
-ul.nav li a,
-ul.nav li a:visited {
-  color: #74c69d !important;
-      text-decoration-line: none;
-
+/* Links inside the navbar */
+.navbar a {
+  
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-ul.nav li a:hover,
-ul.nav li a:active {
-  color: #2D6A4F !important;
-      text-decoration-line: none;
-
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: dimgray;
+  color: black;
 }
 
-ul.nav li.active a {
-  color: #74c69d !important;
-      text-decoration-line: none;
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
 
+.space {
+  display: flex;
+  justify-content: flex-end;
 }
 </style>
